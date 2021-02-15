@@ -32,10 +32,34 @@ int main(void)
     // char c = 'A';
     // printf("%c\n", c);
 
-    char str[256];
-    scanf("%s", str, sizeof(str)); //256 개 이내의 문자열만 받겠다
-    printf("%s\n", str);
+    // char str[256];
+    // scanf("%s", str, sizeof(str)); //256 개 이내의 문자열만 받겠다
+    // printf("%s\n", str);
+    // 경찰관이 범죄자의 정보를 입수(조서 작성)
+    // 이름, 나이 , 몸무게, 키 , 범죄명
 
-    return 0;
+    char name[256];
+    printf("이름: ");
+    scanf("%s", name);
+
+    int age;
+    printf("나이: ");
+    scanf("%d", &age);
+    
+    float weight;
+    printf("몸무게: ");
+    scanf("%f", &weight);
+
+    float height;
+    printf("키: ");
+    scanf("%f", &height);
+    
+    char title[256];
+    printf("범죄명: ");
+    scanf("%s", title);
+
+    printf("%s, %d, %.2f, %.2f, %s", name, age, weight, height, title);
+
+        return 0;
 }
 
